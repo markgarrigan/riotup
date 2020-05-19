@@ -1,0 +1,21 @@
+<app>
+    <router>
+        <!-- These links will trigger automatically HTML5 history events -->
+        <nav>
+            <a href="/">Home</a>
+            <a href="/about">About</a>
+            <a href="/team/mark">Mark</a>
+        </nav>
+
+        <!-- Your application routes will be rendered here -->
+        <route path="/">
+            Home page
+        </route>
+        <route path="/about">
+            About
+        </route>
+        <route path="/team/:person">
+            Hello { route.params[0] }
+        </route>
+    </router>
+</app>
